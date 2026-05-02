@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何培养认真严谨的习惯</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* 最大容器，控制整体宽度并居中 */
+        .container {
+            max-width: 1000px; /* 限制最大宽度 */
+            margin: 0 auto;    /* 水平居中 */
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* 页面标题 */
+        .page-title {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 时间来源信息 */
+        .page-meta {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* 核心内容区：左右分栏 */
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px; /* 图片和文字之间的间距 */
+        }
+
+        /* 左侧图片 */
+        .left-img {
+            flex: 0 0 auto; /* 不拉伸，保持图片原始宽度 */
+        }
+        .left-img img {
+            width: 450px; /* 图片宽度，可根据实际调整 */
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        /* 右侧文字 */
+        .right-text {
+            flex: 1; /* 占满剩余空间 */
+        }
+
+        /* 列表样式 */
+        .habit-list {
+            list-style: none;
+        }
+        .habit-list li {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        /* 列表前面的黑点 */
+        .habit-list li::before {
+            content: "•";
+            color: #e63946;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* 响应式：手机端变回上下排列 */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .left-img img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1 class="page-title">如何培养认真严谨的习惯</h1>
+        <div class="page-meta">时间：2022年02月21日17时26分 来源：思政教育</div>
+
+        <!-- 左右分栏内容 -->
+        <div class="content">
+            <!-- 左侧图片 -->
+            <div class="left-img">
+                <img src="images/defc.jpg" alt="态度决定一切 细节决定成败">
+            </div>
+
+            <!-- 右侧文字 -->
+            <div class="right-text">
+                <ul class="habit-list">
+                    <li>反复确认，做任何事情都要照顾到每一个细节并反复确认，要有一种能在脑子里“虚拟”整个事件过程的能力，确保所有的节点都正常。</li>
+                    <li>想尽办法努力让不可能变为可能，只有用尽全力做了，才算是努力。</li>
+                    <li>结果导向，一切以结果为导向，任何事情都是你的名片。还要思考你的结果和过程是否满足所有和你配合的人的需求。</li>
+                    <li>学会假设，了解周围比你强的人，观察他们的做事方法。遇到让自己束手无策的时候，把自己虚拟成他的样子，想想他会怎么做。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
