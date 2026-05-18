@@ -8,11 +8,13 @@
         html, body {
             height: 100%;
             margin: 0;
-            background-color: #f0f2f5;
+            
+            background: url("images/qwer.jpg") no-repeat center center;
+            background-size: cover; 
+            background-attachment: fixed; 
             font-family: "Microsoft YaHei", sans-serif;
         }
 
-        
         .top-box {
             position: fixed;
             top: 16px;
@@ -27,7 +29,7 @@
             padding: 8px 15px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 12px; 
+            margin-bottom: 12px;
         }
 
         .link-btn {
@@ -39,6 +41,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             display: inline-block;
+            margin-bottom: 8px; /* 给按钮加一点间距 */
         }
 
         .link-btn:hover {
@@ -49,12 +52,11 @@
 <body>
     <div class="top-box">
         <div class="number">25051030336</div>
-       <a href="claude.html" class="link-btn" target="_blank">
-    Claude Code 介绍
-        </a >
-       <a href="second.html" class="link-btn" target="_blank">
-    如何培养认真严谨的习惯
-        </a >
+        <a href="claude.html" class="link-btn" target="_blank">Claude Code 介绍</a >
+        <br>
+        <a href="second.html" class="link-btn" target="_blank">如何培养认真严谨的习惯</a >
+        <br>
+        <a href="third.html" class="link-btn" target="_blank">播放器图标</a >
     </div>
 </body>
 </html>
